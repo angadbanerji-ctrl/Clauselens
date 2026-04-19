@@ -1,0 +1,162 @@
+{
+  "clauseTypes": {
+    "indemnity": {
+      "name": "Indemnity Clause",
+      "description": "A clause where one party agrees to compensate the other for losses, damages, or liabilities",
+      "standardFeatures": [
+        "Mutual indemnification between parties",
+        "Carve-outs for gross negligence and willful misconduct",
+        "Cap on indemnification obligations",
+        "Prompt notice requirement",
+        "Right to control defense",
+        "Cooperation obligations"
+      ],
+      "redFlags": [
+        "Unilateral (one-sided) indemnification",
+        "No cap on indemnification liability",
+        "Indemnity for indirect or consequential losses",
+        "Indemnity for indemnitee's own negligence",
+        "No notice requirement before triggering indemnity",
+        "Unlimited scope covering all possible claims",
+        "No carve-out for pre-existing liabilities"
+      ]
+    },
+    "limitationOfLiability": {
+      "name": "Limitation of Liability Clause",
+      "description": "A clause that caps the amount of damages one party can recover from the other",
+      "standardFeatures": [
+        "Cap equal to fees paid in preceding 12 months",
+        "Mutual limitation applying to both parties",
+        "Exclusion of indirect, consequential, and punitive damages",
+        "Carve-outs for death/personal injury, fraud, and wilful misconduct",
+        "Carve-out for IP infringement claims",
+        "Carve-out for data breach/confidentiality obligations"
+      ],
+      "redFlags": [
+        "Asymmetric cap (lower for one party)",
+        "No carve-out for fraud or wilful misconduct",
+        "Cap lower than total contract value",
+        "Exclusion of direct damages",
+        "No carve-out for confidentiality breaches",
+        "Cap on indemnity obligations lower than indemnity exposure",
+        "Unlimited liability for customer but capped for vendor"
+      ]
+    },
+    "termination": {
+      "name": "Termination Clause",
+      "description": "A clause specifying the conditions under which either party may end the contract",
+      "standardFeatures": [
+        "Termination for cause with cure period (typically 30 days)",
+        "Termination for convenience with reasonable notice (30-90 days)",
+        "Specific grounds for immediate termination (insolvency, material breach)",
+        "Post-termination obligations and survival provisions",
+        "Wind-down period for transition",
+        "Payment obligations upon termination"
+      ],
+      "redFlags": [
+        "No cure period before termination for cause",
+        "Unilateral right to terminate for convenience only for one party",
+        "Very short termination notice period (less than 30 days)",
+        "No survival provisions for key obligations",
+        "Automatic termination on minor breaches",
+        "No transition assistance obligation",
+        "Termination fee that acts as a penalty"
+      ]
+    },
+    "confidentiality": {
+      "name": "Confidentiality / NDA Clause",
+      "description": "A clause protecting sensitive information shared between parties from disclosure to third parties",
+      "standardFeatures": [
+        "Clear definition of confidential information",
+        "Standard exceptions (publicly known, independently developed, legally compelled)",
+        "Obligation to maintain confidentiality using reasonable measures",
+        "Limited disclosure to employees/advisors on need-to-know basis",
+        "Return or destruction of confidential information on termination",
+        "Reasonable term (2-5 years post-disclosure)"
+      ],
+      "redFlags": [
+        "No definition or overly broad definition of confidential information",
+        "Perpetual confidentiality obligations",
+        "No exception for legally compelled disclosure",
+        "Obligation to guarantee confidentiality of third-party recipients",
+        "No return/destruction obligation on termination",
+        "Unilateral obligations only on receiving party"
+      ]
+    },
+    "intellectualProperty": {
+      "name": "Intellectual Property Clause",
+      "description": "A clause governing ownership, licensing, and use of intellectual property created or used under the contract",
+      "standardFeatures": [
+        "Clear ownership of pre-existing IP retained by each party",
+        "License grant for use of background IP as needed",
+        "Clear ownership of newly created IP (work-for-hire or joint)",
+        "IP indemnity for infringement claims",
+        "Moral rights waiver where applicable",
+        "Reasonable license to use deliverables post-termination"
+      ],
+      "redFlags": [
+        "Automatic assignment of all IP created during engagement",
+        "No carve-out for pre-existing IP",
+        "Overly broad IP assignment covering improvements to background IP",
+        "No license grant for use of necessary background IP",
+        "Assignment of IP without consideration",
+        "Perpetual, irrevocable license with no scope limitations"
+      ]
+    },
+    "disputeResolution": {
+      "name": "Dispute Resolution Clause",
+      "description": "A clause specifying the process and forum for resolving disputes between parties",
+      "standardFeatures": [
+        "Tiered escalation: negotiation → mediation → arbitration/litigation",
+        "Clear choice of law and jurisdiction",
+        "Agreed arbitration institution and rules (if arbitration)",
+        "Seat and language of arbitration",
+        "Interim/emergency relief carve-out",
+        "Cost allocation provisions"
+      ],
+      "redFlags": [
+        "Exclusive jurisdiction in a party's home jurisdiction only",
+        "No carve-out for emergency injunctive relief",
+        "Mandatory arbitration waiving jury trial without clear disclosure",
+        "No clear governing law",
+        "Dispute resolution process heavily favoring one party",
+        "Class action waiver without equivalent benefit"
+      ]
+    },
+    "forceMAjeure": {
+      "name": "Force Majeure Clause",
+      "description": "A clause excusing a party from performance due to extraordinary events beyond its control",
+      "standardFeatures": [
+        "Definition limited to genuinely unforeseeable events",
+        "Obligation to give prompt notice of force majeure event",
+        "Obligation to mitigate impact and resume performance",
+        "Right to terminate if force majeure continues beyond set period",
+        "No relief for financial hardship alone",
+        "Payment obligations survive force majeure"
+      ],
+      "redFlags": [
+        "Overly broad definition covering foreseeable events",
+        "No obligation to give notice",
+        "No obligation to mitigate",
+        "Relief from payment obligations during force majeure",
+        "No termination right if force majeure is prolonged",
+        "Including economic downturns or market changes as force majeure"
+      ]
+    }
+  },
+  "generalRedFlags": [
+    "Undefined or overly vague terms",
+    "Unusual or non-standard market terms",
+    "Asymmetric obligations heavily favouring one party",
+    "No limitation on damages or liability",
+    "Automatic renewal with no notice mechanism",
+    "Unilateral amendment rights",
+    "Retroactive application of terms",
+    "Waiver of statutory rights that cannot be waived"
+  ],
+  "riskLevels": {
+    "Low": "Minor deviations from market standard. Acceptable with minor negotiation.",
+    "Moderate": "Notable deviations that could create commercial exposure. Should be negotiated.",
+    "High": "Significant one-sided terms or missing protections. Requires negotiation before execution."
+  }
+}
